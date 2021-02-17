@@ -1,0 +1,56 @@
+/* ==================== NAVS ==================== */
+/* Top nav bar */
+
+body {
+    padding: 0px;
+}
+
+.topBar {
+    background-color: rgb(228, 228, 228);
+    align-items: center;
+    padding: 10px;
+}
+
+.topBar img, .topBar h4 {
+    display: block;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topIcons {
+    width: 20px;
+}
+
+#infoButton {
+    margin-top: 7px;
+}
+
+/* bottom navbar */
+
+.mynavbar {
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(228, 228, 228);
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.mynavbar a {
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.bottomIcons {
+    width: 25px;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+/* ==================== end ==================== */

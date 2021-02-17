@@ -1,11 +1,15 @@
+
+/* ==================== NAVS ==================== */
+/* Top nav bar */
+
 body {
     padding: 0px;
 }
 
 .topBar {
-    background-color: rgb(138, 138, 138);
+    background-color: rgb(228, 228, 228);
     align-items: center;
-    padding: 10px; 
+    padding: 10px;
 }
 
 .topBar img, .topBar h4 {
@@ -23,13 +27,42 @@ body {
     margin-top: 7px;
 }
 
+/* bottom navbar */
+
+.mynavbar {
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(228, 228, 228);
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.mynavbar a {
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.bottomIcons {
+    width: 25px;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+/* ==================== end ==================== */
+
 .sortFilter {
     margin-top: 60px;
     text-align:center;
 }
 
 .btn{
-    background-color:rgb(96, 99, 102);
+    background-color:rgb(196, 196, 196);
     color: white;
 }
 
@@ -50,7 +83,7 @@ body {
 }
 
 .card-thumbnail {
-    background-color: #525252;
+    background-color: #494949;
     padding: 0px;
     margin-left: 3%;
     margin-right: 3%;
@@ -66,29 +99,6 @@ body {
     margin-right: 1%;
     margin-left: 1%;
     width: 5%;
-}
-
-/* bottom navbar */
-
-.mynavbar {
-    text-align: center;
-    overflow: hidden;
-    background-color: rgb(184, 184, 184);
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-}
-
-.mynavbar a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.bottomIcons {
-    width: 40px;
 }
 
 /* images */
