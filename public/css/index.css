@@ -52,5 +52,44 @@ body {
 .container {
     margin-top: 70px;
 }
+/* For the logo on home page*/
+.pic-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
 
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size:11px;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:11px;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size:16px;
+  text-align: center;
+}
+
+.p4 {
+  font-family: "Brush Script M7", "Lucida Handwriting", cursive;
+  font-size:11px;
+}
+
+.p5 {
+  font-family: "Copperplate", "Papyrus", fantasy;
+  font-size:11px;
+}
+
+.p6 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size:20px;
+  color:red;
+  text-align: center;
+}
 /* ==================== end ==================== */
