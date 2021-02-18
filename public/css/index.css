@@ -73,6 +73,7 @@ body {
 .p3 {
   font-family: "Lucida Console", "Courier New", monospace;
   font-size:16px;
+  color:black;
   text-align: center;
 }
 
@@ -89,7 +90,7 @@ body {
 .p6 {
   font-family: "Lucida Console", "Courier New", monospace;
   font-size:20px;
-  color:red;
+  color:black;
   text-align: center;
 }
 /* ==================== end ==================== */
