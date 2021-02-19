@@ -52,6 +52,7 @@ body {
 .container {
     margin-top: 70px;
 }
+
 /* For the logo on home page*/
 .pic-center {
   display: block;
@@ -88,5 +89,62 @@ body {
   /*font-size:20px; */
   color:black;
   text-align: center;
+}
+
+/* Resutls and Search pages */
+.sortFilter {
+    margin-top: 60px;
+    text-align:center;
+}
+
+.btn{
+    background-color:rgb(196, 196, 196);
+    color: white;
+}
+
+/* card stuff */
+
+.resultsCards {
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: scroll;
+}
+
+.card {
+    margin-top: 5px;
+}
+
+.card-elements {
+    /* float: left; */
+}
+
+.card-thumbnail {
+    background-color: #494949;
+    padding: 0px;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 85px;
+    height: auto;
+}
+.card-description {
+    width: 45%;
+    font-size: small;
+}
+.card-button {
+    margin-top: 10%;
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 5%;
+}
+
+/* images */
+#popcorn {
+    width: 100%;
+}
+
+/* misc */
+.NoResultsBottom {
+    margin-bottom: 80px;
+    text-align: center;
 }
 /* ==================== end ==================== */
