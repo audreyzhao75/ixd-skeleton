@@ -16,8 +16,14 @@ var index = require('./routes/index');
 // var event = require("./routes/newEvent");
 // var messages = require('./routes/messages');
 // var profile = require("./routes/profile");
-var search = require("./routes/search");
+var search = require('./routes/search');
 var results = require('./routes/results');
+var blankEvent = require('./routes/blankEvent');
+var help = require('./routes/help');
+var kellyParty = require('./routes/kellyParty');
+var messages = require('./routes/messages');
+var newEvent = require('./routes/newEvent');
+var profile = require('./routes/profile');
 
 var app = express();
 
@@ -46,6 +52,12 @@ app.get('/', index.view);
 // app.get('/users', user.list);
 app.get('/search', search.view);
 app.get('/results', results.view);
+app.get('/blankEvent', blankEvent.view);
+app.get('/kellyParty', kellyParty.view);
+app.get('/messages', messages.view);
+app.get('/newEvent', newEvent.view);
+app.get('/profile', profile.view);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
