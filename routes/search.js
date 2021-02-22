@@ -1,3 +1,6 @@
+var dogBreeds = require('../views/dogBreeds.json');
+
 exports.view = function(req, res){
-    res.render('search');
+	//console.log(dogBreeds);
+    res.render('search', dogBreeds);
 };
