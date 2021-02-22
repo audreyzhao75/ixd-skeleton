@@ -1,0 +1,55 @@
+{
+    "events": [
+        {
+            "id": "1",
+            "image": "",
+            "eventName": "Kelly's Puppy Party",
+            "eventType": "Adoption",
+            "petType": "Dog",
+            "breed": "Maltese",
+            "time": "Friday 2:10pm",
+            "location": "1234 Puppy Lane",
+            "attending": false
+        },
+        {
+            "image": "",
+            "eventName": "Petco Adoption Event",
+            "eventType": "Adoption",
+            "petType": "Mixed",
+            "breed": "No specific breed",
+            "time": "Saturday 12:00pm",
+            "location": "Petco Store",
+            "attending": false
+        },
+        {
+            "image": "",
+            "eventName": "Sally's Cute Doggos!!",
+            "eventType": "Adoption",
+            "petType": "Dog",
+            "breed": "Golden Retreiver",
+            "time": "Saturday 3:00pm",
+            "location": "2021 Golden Drive",
+            "attending": false
+        },
+        {
+            "image": "",
+            "eventName": "Ben's Bring a Pup Home",
+            "eventType": "Adoption",
+            "petType": "Dog",
+            "breed": "Shiba Inu",
+            "time": "2/27/21 11:00am",
+            "location": "7890 Doge Court",
+            "attending": false
+        },
+        {
+            "image": "",
+            "eventName": "Chad's Adoption Party",
+            "eventType": "Adoption",
+            "petType": "Dog",
+            "breed": "Poodle",
+            "time": "3/1/21 2:00pm",
+            "location": "8765 Majestic Way",
+            "attending": false
+        }
+    ]
+}

@@ -1,3 +1,6 @@
+var events = require('../views/events.json');
+
 exports.view = function(req, res){
-    res.render('results');
+    console.log(events);
+    res.render('results', events);
 };
