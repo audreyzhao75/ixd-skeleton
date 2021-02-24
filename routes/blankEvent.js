@@ -27,6 +27,7 @@ exports.view = function(req, res){
 	}
 
     res.render('blankEvent', {
+      'image': image,
     	'eventName': name,
     	'eventType': eventType,
     	'petType': petType,
