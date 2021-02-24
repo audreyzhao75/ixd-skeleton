@@ -55,7 +55,6 @@ app.get('/index', index.view);
 app.get('/search', search.view);
 app.get('/results', results.view);
 app.get('/blankEvent/:eventName', blankEvent.view);
-app.get('/blankEvent/:eventType', blankEvent.view);
 app.get('/help', help.view);
 app.get('/kellyParty', kellyParty.view);
 app.get('/messages', messages.view);

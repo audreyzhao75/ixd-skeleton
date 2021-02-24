@@ -32,14 +32,24 @@
         <p>{{petType}}: {{breed}}</p>
         <p>{{time}}</p>
         <p>{{location}}</p>
+        <p>{{description}}</p>
 
-
+        {{#if attending}}
         <div class="form-check">
-		  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-		  <label class="form-check-label" for="flexCheckDefault">
+		  <input class="form-check-input" type="checkbox" value="" id="attending" checked>
+		  <label class="form-check-label" for="attending">
 		    I'm attending
 		  </label>
 		</div>
+		{{else}}
+		<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="attending">
+		  <label class="form-check-label" for="attending">
+		    I'm attending
+		  </label>
+		</div>
+		{{/if}}
+		
     </div>
  	<!-- <h4>links</h4>
     <div id="project1">
@@ -85,7 +95,6 @@
 
     <script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/blankEvent.js"></script>
 	<script id="handlebars-demo" type="text/x-handlebars-template">
 </script>
 </body>
