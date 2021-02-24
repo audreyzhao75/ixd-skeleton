@@ -78,10 +78,15 @@ body {
 
 .p4 {
   font-family: "Brush Script M7", "Lucida Handwriting", cursive;
+  font-size:30px;
+  color:black;
+  text-align: center;
 }
 
 .p5 {
   font-family: "Copperplate", "Papyrus", fantasy;
+  color:black;
+  text-align: center;
 }
 
 .p6 {
@@ -89,6 +94,34 @@ body {
   /*font-size:20px; */
   color:black;
   text-align: center;
+}
+
+.p7 {
+  font-family: "Brush Script M7", "Lucida Handwriting", cursive;
+  color:black;
+  text-align: left;
+  font-size:15px;
+}
+
+.p8 {
+  font-family: "Brush Script M7", "Lucida Handwriting", cursive;
+  color:black;
+  text-align: left;
+  font-size:15px;
+}
+
+.p9 {
+  font-family: "Brush Script M7", "Lucida Handwriting", cursive;
+  color:black;
+  text-align: center;
+  font-size:15px;
+}
+
+.p10 {
+  font-family: "Brush Script M7", "Lucida Handwriting", cursive;
+  color:black;
+  text-align: right;
+  font-size:15px;
 }
 
 /* Resutls and Search pages */
@@ -152,3 +185,17 @@ body {
     margin-bottom: 0%;
 }
 /* ==================== end ==================== */
+
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: right;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} 

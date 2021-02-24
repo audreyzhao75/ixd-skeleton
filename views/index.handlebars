@@ -27,64 +27,57 @@
 		</div>
 	</div>
 	<div class="container">
-      	<!-- <h1>WePet uwu ™ <3</h1> -->
 		<div id="index">
-		<a href="index">
-		 	<img src="images/logo.png" alt="WePet logo" class="pic-center">
-		 </a>
-		<!--This is a comment <img src="images/83401061_598130577414441_7838613489009557504_o.jpeg" width="600" height="400" alt="S win image"> -->
 		<br>
+		<p class="p4">Welcome, User</p>
 	</div>
-		<div>
-		<p class="p6">Quick Links:</p>
-		</div>
-		<div id="search">
-		    <a href="search">
-		    <p class="p3">search</p>
-		</a>
-		</div>
-		<div id="results">
-		    <a href="results">
+		<!--This is a comment <img src="images/83401061_598130577414441_7838613489009557504_o.jpeg" width="600" height="400" alt="S win image"> -->
+	<div id="mypets">
+		<p class="p7">My pets:</p>
+	</div>
+	<div class="row">
+  		<div class="column">
+    		<img src="images/popcorn.jpg" alt="logo" title="Popcorn" style="width:70%">
+    		<p class="p8">Popcorn</p>
+  		</div>
+  		<div class="column">
+    		<img src="images/popcorn.jpg" alt="logo" title="Copper" style="width:70%">
+    		<p class="p8">Copper</p>
+  		</div>
+	</div> 
+	<br>
+		<div id="Attending">
 			<!-- This is a comment <img src="images/83401061_598130577414441_7838613489009557504_o.jpeg" width="600" height="400" alt="S win image"> -->
-			<p class="p3">results</p>
-		    </a>
+			<p class="p7">I'm attending:</p>
 		</div>
-		<div id="messages">
-		<a href="messages">
-			<!-- This is a comment <img src="images/83401061_598130577414441_7838613489009557504_o.jpeg" width="600" height="400" alt="S win image"> -->
-			<p class="p3">messages</p>
-		</a>
+		<!-- replace with JSON? -->
+	<div class="resultsCards">
+        {{#each events}}
+            <div class="card">
+                <div class="card-body">
+                    <div class="row card-elements">
+                        <div class="card-thumbnail">
+                            <!-- public/images/popcorn.jpg -->
+                            <img src="{{image}}"> 
+                        </div>
+                        <div class="card-description">
+                            <h5 class="card-title">{{eventName}}</h5>
+                            <h6>[{{petType}}: {{breed}}]</h6>
+                            <p class="card-text">{{eventType}} Event</p>
+                            <p class="card-text">{{time}}</p>
+                            <p class="card-text">@{{location}}</p>	
+                        </div>
+                        <div class="card-button">
+                            <a href="kellyParty" class="btn btn-go">Go!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+		<div class="NoResultsBottom">
+			<p>No more results</p>
 		</div>
-		<div id="newEvent">
-		<a href="newEvent">
-			<!-- This is a comment <img src="images/83401061_598130577414441_7838613489009557504_o.jpeg" width="600" height="400" alt="S win image"> -->
-			<p class="p3">newEvent</p>
-		</a>
-		</div>
-		<div id="profile">
-		<a href="profile">
-			<!-- This is a comment <img src="images/83401061_598130577414441_7838613489009557504_o.jpeg" width="600" height="400" alt="S win image"> -->
-			<p class="p3">profile</p>
-		</a>
-		</div>
-		<div id="kellyParty">
-		<a href="kellyParty">
-			<!-- This is a comment <img src="images/83401061_598130577414441_7838613489009557504_o.jpeg" width="600" height="400" alt="S win image"> -->
-			<p class="p3">Kelly's Puppy Party</p>
-		</a>
-		</div>
-		<div id="help">
-		<a href="help">
-			<!-- This is a comment <img src="images/83401061_598130577414441_7838613489009557504_o.jpeg" width="600" height="400" alt="S win image"> -->
-			<p class="p3">help</p>
-		</a>
-		</div>
-		<div id="blankEvent">
-		<a href="blankEvent">
-			<!-- This is a comment <img src="images/83401061_598130577414441_7838613489009557504_o.jpeg" width="600" height="400" alt="S win image"> -->
-			<p class="p3">blank event</p>
-		</a>
-		</div>
+	</div>
   	</div>
   </div>
 	<!-- bottom nav -->
