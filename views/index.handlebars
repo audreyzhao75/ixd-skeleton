@@ -16,7 +16,7 @@
 	<div class="topBar fixed-top" >
 		<div class="row">
 			<div class="col">
-				<!-- <a href="index.html"><img src="images/backButton.png" class="topIcons"></a> -->
+				<a href="/"><img src="images/backButton.png" class="topIcons"></a>
 			</div>
 			<div class="col-8">
 				<h4>Home</h4>
@@ -26,58 +26,59 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div id="index">
-		<br>
-		<p class="p4">Welcome, User</p>
-	</div>
+	<div class="containerIndex">
+		<div id="welcome">
+            <br>
+            <p class="p4">Welcome, User</p>
+	    </div>
 		<!--This is a comment <img src="images/83401061_598130577414441_7838613489009557504_o.jpeg" width="600" height="400" alt="S win image"> -->
-	<div id="mypets">
-		<p class="p7">My pets:</p>
-	</div>
-	<div class="row">
-  		<div class="column">
-    		<img src="images/popcorn.jpg" alt="logo" title="Popcorn" style="width:70%">
-    		<p class="p8">Popcorn</p>
-  		</div>
-  		<div class="column">
-    		<img src="images/popcorn.jpg" alt="logo" title="Copper" style="width:70%">
-    		<p class="p8">Copper</p>
-  		</div>
-	</div> 
-	<br>
-		<div id="Attending">
+        <div class="contentBorder" id="mypets">
+            <p class="p7">My pets:</p>
+            <div class="row">
+                <div class="column petColumn">
+                    <img src="images/popcorn.jpg" alt="logo" title="Popcorn" style="width:70%">
+                    <p class="p8 petName">Popcorn</p>
+                </div>
+                <div class="column petColumn">
+                    <img src="images/maya.jpg" alt="logo" title="Copper" style="width:70%">
+                    <p class="p8 petName">Copper</p>
+                </div>
+            </div> 
+        </div>
+	    <br>
+		<div class="contentBorder" id="Attending">
 			<!-- This is a comment <img src="images/83401061_598130577414441_7838613489009557504_o.jpeg" width="600" height="400" alt="S win image"> -->
 			<p class="p7">I'm attending:</p>
+            <p class="p8">No added events yet.</p>
+            <a role="button" class="btn" href="search">Search for events?</a>
 		</div>
 		<!-- replace with JSON? -->
-	<div class="resultsCards">
-        {{#each events}}
-            <div class="card">
-                <div class="card-body">
-                    <div class="row card-elements">
-                        <div class="card-thumbnail">
-                            <!-- public/images/popcorn.jpg -->
-                            <img src="{{image}}"> 
-                        </div>
-                        <div class="card-description">
-                            <h5 class="card-title">{{eventName}}</h5>
-                            <h6>[{{petType}}: {{breed}}]</h6>
-                            <p class="card-text">{{eventType}} Event</p>
-                            <p class="card-text">{{time}}</p>
-                            <p class="card-text">@{{location}}</p>	
-                        </div>
-                        <div class="card-button">
-                            <a href="kellyParty" class="btn btn-go">Go!</a>
+        <!-- <div class="resultsCards">
+            {{#each events}}
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row card-elements">
+                            <div class="card-thumbnail">
+                                <img src="{{image}}"> 
+                            </div>
+                            <div class="card-description">
+                                <h5 class="card-title">{{eventName}}</h5>
+                                <h6>[{{petType}}: {{breed}}]</h6>
+                                <p class="card-text">{{eventType}} Event</p>
+                                <p class="card-text">{{time}}</p>
+                                <p class="card-text">@{{location}}</p>	
+                            </div>
+                            <div class="card-button">
+                                <a href="kellyParty" class="btn btn-go">Go!</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            {{/each}}
+            <div class="NoResultsBottom">
+                <p>No more results</p>
             </div>
-        {{/each}}
-		<div class="NoResultsBottom">
-			<p>No more results</p>
-		</div>
-	</div>
+        </div> -->
   	</div>
   </div>
 	<!-- bottom nav -->

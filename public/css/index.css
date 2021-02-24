@@ -106,7 +106,7 @@ body {
 .p8 {
   font-family: "Brush Script M7", "Lucida Handwriting", cursive;
   color:black;
-  text-align: left;
+  text-align: center;
   font-size:15px;
 }
 
@@ -122,6 +122,21 @@ body {
   color:black;
   text-align: right;
   font-size:15px;
+}
+
+/* Index / home stuff */
+.containerIndex {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.contentBorder {
+    border-radius: 25px;
+    border: 2px solid #b3b3b3;
+    padding: 10px;
+    height: auto;
 }
 
 /* Resutls and Search pages */
@@ -147,10 +162,6 @@ body {
 
 .card {
     margin-top: 5px;
-}
-
-.card-elements {
-    /* float: left; */
 }
 
 .card-thumbnail {
@@ -188,7 +199,7 @@ body {
 
  /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
-  float: right;
+  /* float: right; */
   width: 50%;
   padding: 5px;
 }
