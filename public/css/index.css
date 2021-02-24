@@ -210,3 +210,13 @@ body {
   clear: both;
   display: table;
 } 
+
+/* event */
+.eventImage{
+    /* background-color: #494949; */
+    /* padding: 0px; */
+    margin-left: 7%;
+    margin-right: 7%;
+    width: 80%;
+    height: auto;
+}
