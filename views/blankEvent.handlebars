@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>blank event</title>
+	<title>Event</title>
 	<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,37 +9,50 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
 <body>
 <!-- top nav -->
     <div class="topBar fixed-top" >
         <div class="row">
             <div class="col">
-                <a href="javascript:history.back()"><img src="images/backButton.png" class="topIcons"></a>
+                <a href="javascript:history.back()"><img src="/images/backButton.png" class="topIcons"></a>
             </div>
             <div class="col-8">
-                <h4>Blank Event</h4>
+                <h4>Event</h4>
             </div>
             <div class="col">
-                <a href="help"><img src="images/infoButton.png" class="topIcons" id="infoButton"></a>
+                <a href="help"><img src="/images/infoButton.png" class="topIcons" id="infoButton"></a>
             </div>
         </div>
     </div>
     <div class="container">
-        <p>Blank Event</p>
+        <h2>{{eventName}}</h2>
+        <img src="{{image}}">
+        <p>{{eventType}}</p>
+        <p>{{petType}}: {{breed}}</p>
+        <p>{{time}}</p>
+        <p>{{location}}</p>
+
+
+        <div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+		  <label class="form-check-label" for="flexCheckDefault">
+		    I'm attending
+		  </label>
+		</div>
     </div>
  	<!-- <h4>links</h4>
     <div id="project1">
       <a href="index2.html">
          This is a comment <img src="images/83401061_598130577414441_7838613489009557504_o.jpeg" width="600" height="400" alt="S win image"> 
         <p>Sustain-A-Thon</p>
-      </a> -->
-    </div> 
+      </a>
+    </div>  -->
 
     <!-- bottom nav -->
 	<div class="mynavbar">
 		<!--home-->
-		<a class="navbar-brand" href="index">
+		<a class="navbar-brand" href="/views/index">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bottomIcons bi bi-house-door-fill" viewBox="0 0 16 16">
 				<path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
 			</svg>
@@ -71,8 +84,8 @@
 	</div>
 
     <script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/introHCI.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/blankEvent.js"></script>
 	<script id="handlebars-demo" type="text/x-handlebars-template">
 </script>
 </body>
