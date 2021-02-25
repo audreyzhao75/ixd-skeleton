@@ -1,0 +1,104 @@
+/* ==================== NAVS ==================== */
+/* Top nav bar */
+
+body {
+    padding: 0px;
+}
+
+.topBar {
+    background-color: rgb(228, 228, 228);
+    align-items: center;
+    padding: 10px;
+}
+
+.topBar img, .topBar h4 {
+    display: block;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topIcons {
+    width: 20px;
+}
+
+#infoButton {
+    margin-top: 7px;
+}
+
+/* bottom navbar */
+
+.mynavbar {
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(228, 228, 228);
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.mynavbar a {
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.bottomIcons {
+    width: 25px;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+ /* Chat containers */
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+} 
