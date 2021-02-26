@@ -50,33 +50,42 @@ body {
 }
 
 .container {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
  /* Chat containers */
-.container {
+.msgcontainer {
+  margin-right: 5%;
+  margin-left: 5%;
   border: 2px solid #dedede;
   background-color: #f1f1f1;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px 0;
+  margin-top: 10px;
+}
+
+#topMessage {
+  margin-top: 70px;
 }
 
 /* Darker chat container */
 .darker {
   border-color: #ccc;
   background-color: #ddd;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 10px;
 }
 
 /* Clear floats */
-.container::after {
+.msgcontainer::after {
   content: "";
   clear: both;
   display: table;
 }
 
 /* Style images */
-.container img {
+.msgcontainer img {
   float: left;
   max-width: 60px;
   width: 100%;
@@ -85,7 +94,7 @@ body {
 }
 
 /* Style the right image */
-.container img.right {
+.msgcontainer img.right {
   float: right;
   margin-left: 20px;
   margin-right:0;

@@ -139,6 +139,11 @@ body {
     height: auto;
 }
 
+#avatar {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 /* Resutls and Search pages */
 .sortFilter {
     margin-top: 60px;
