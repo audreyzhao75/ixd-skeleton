@@ -1,6 +1,18 @@
 {
     "events": [
         {
+            "image": "",
+            "eventName": "Sally's Cute Doggos!!",
+            "eventType": "Adoption",
+            "petType": "Dog",
+            "breed": "Golden Retreiver",
+            "time": "Saturday 3:00pm",
+            "sortBy": "nextWeek",
+            "location": "2021 Golden Drive",
+            "attending": false,
+            "description": "Four lovely golden retriever puppies up for adoption! They're 5 months old and looking for a loving home! 3 males and 2 females and potty-trained. Names are: Sam, Spike, Sunny, Oscar, Peach"
+        },
+        {
             "id": "1",
             "image": "popcorn.jpg",
             "eventName": "Kelly's Puppy Party",
@@ -8,6 +20,7 @@
             "petType": "Dog",
             "breed": "Maltese",
             "time": "Friday 2:10pm",
+            "sortBy": "nextWeek",
             "location": "1234 Puppy Lane",
             "attending": false,
             "description": "We have 3 five-month old puppies up for adoption! 2 females and 1 male. They're all very energetic and looking for a loving and active home!"
@@ -19,20 +32,10 @@
             "petType": "Mixed",
             "breed": "No specific breed",
             "time": "Saturday 12:00pm",
+            "sortBy": "nextWeek",
             "location": "Petco Store",
             "attending": false,
             "description": "10 dogs of various breeds (2 Golden retrievers, 3 Hound, 4 Terrier, 1 Pug). "
-        },
-        {
-            "image": "",
-            "eventName": "Sally's Cute Doggos!!",
-            "eventType": "Adoption",
-            "petType": "Dog",
-            "breed": "Golden Retreiver",
-            "time": "Saturday 3:00pm",
-            "location": "2021 Golden Drive",
-            "attending": false,
-            "description": "Four lovely golden retriever puppies up for adoption! They're 5 months old and looking for a loving home! 3 males and 2 females and potty-trained. Names are: Sam, Spike, Sunny, Oscar, Peach"
         },
         {
             "image": "",
@@ -40,7 +43,8 @@
             "eventType": "Adoption",
             "petType": "Dog",
             "breed": "Shiba Inu",
-            "time": "2/27/21 11:00am",
+            "time": "3/20/21 11:00am",
+            "sortBy": "nextWeek nextMonth",
             "location": "7890 Doge Court",
             "attending": false,
             "description": "2 males - one 5 year old, one 3 years old. Both very playful."
@@ -51,7 +55,8 @@
             "eventType": "Adoption",
             "petType": "Dog",
             "breed": "Poodle",
-            "time": "3/1/21 2:00pm",
+            "time": "3/22/21 2:00pm",
+            "sortBy": "nextWeek nextMonth",
             "location": "8765 Majestic Way",
             "attending": false,
             "description": "Her name is Emma! Mostly chill but can be very playful. She's about 10 years old and loves to hang aroung people! She needs a home that will giver lots of love and affection! Contact me for more information."
