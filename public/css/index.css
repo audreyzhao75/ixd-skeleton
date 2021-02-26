@@ -171,7 +171,6 @@ body {
 }
 
 .card-thumbnail {
-    background-color: #494949;
     padding: 0px;
     margin-left: 3%;
     margin-right: 3%;
@@ -188,6 +187,10 @@ body {
 
 /* images */
 #popcorn {
+    width: 100%;
+}
+
+.card-img {
     width: 100%;
 }
 

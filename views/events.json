@@ -1,7 +1,7 @@
 {
     "events": [
         {
-            "image": "",
+            "image": "copper.jpeg",
             "eventName": "Sally's Cute Doggos!!",
             "eventType": "Adoption",
             "petType": "Dog",
@@ -25,7 +25,7 @@
             "description": "We have 3 five-month old puppies up for adoption! 2 females and 1 male. They're all very energetic and looking for a loving and active home!"
         },
         {
-            "image": "",
+            "image": "copperfriends.jpeg",
             "eventName": "Petco Adoption Event",
             "eventType": "Adoption",
             "petType": "Mixed",
@@ -37,8 +37,8 @@
             "description": "10 dogs of various breeds (2 Golden retrievers, 3 Hound, 4 Terrier, 1 Pug). "
         },
         {
-            "image": "",
-            "eventName": "Ben's Bring a Pup Home",
+            "image": "buffInu.png",
+            "eventName": "Chad's Bring a Pup Home",
             "eventType": "Adoption",
             "petType": "Dog",
             "breed": "Shiba Inu",
@@ -49,8 +49,8 @@
             "description": "2 males - one 5 year old, one 3 years old. Both very playful."
         },
         {
-            "image": "",
-            "eventName": "Chad's Adoption Party",
+            "image": "IMG_9648.JPG",
+            "eventName": "Ben's Adoption Party",
             "eventType": "Adoption",
             "petType": "Dog",
             "breed": "Poodle",
