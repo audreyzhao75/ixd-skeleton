@@ -10,6 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$('.form-check-input').click(changeAttending);
+    $('.alert').hide();
 }
 
 /*
@@ -31,8 +32,10 @@ function changeAttending(e) {
 function updateAttending(result) {
 	if(result['attending']) {
 		console.log("You're attending! (checked)");
+        $('.alert').show();
 	} else {
 		console.log("You're not attending! :( (unchecked)");
+        $('.alert').hide();
 	}
 
 	//add in .html or .append here later?

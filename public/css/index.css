@@ -140,9 +140,13 @@ body {
     height: auto;
 }
 
+#searchEventBtn {
+    margin-top: 2%;
+}
+
 #avatar {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 /* Resutls and Search pages */
