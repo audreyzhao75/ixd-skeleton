@@ -49,7 +49,30 @@
 		<div class="contentBorder" id="Attending">
 			<!-- This is a comment <img src="images/83401061_598130577414441_7838613489009557504_o.jpeg" width="600" height="400" alt="S win image"> -->
 			<p class="p7">I'm attending:</p>
-            <p class="p8">No added events yet.</p>
+			{{#each events}}
+			{{#if attending}}
+	            <div class="card">
+	                <div class="card-body">
+	                    <div class="row card-elements">
+	                        <div class="card-thumbnail">
+	                            <!-- public/images/popcorn.jpg -->
+	                            <img class="card-img" src="images/{{image}}"> 
+	                        </div>
+	                        <div class="card-description">
+	                            <h5 class="card-title">{{eventName}}</h5>
+	                            <h6>[{{petType}}: {{breed}}]</h6>
+	                            <p class="card-text">{{eventType}} Event</p>
+	                            <p class="card-text">{{time}}</p>
+	                            <p class="card-text">@{{location}}</p>	
+	                        </div>
+	                        <div class="card-button">
+	                            <a href="blankEvent/{{eventName}}" class="btn btn-go">Go!</a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        {{/if}}
+            {{/each}}
             <a role="button" class="btn" href="search">Search for events?</a>
 		</div>
 		<!-- replace with JSON? -->

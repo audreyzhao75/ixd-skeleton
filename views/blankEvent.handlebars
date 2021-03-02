@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="container">
-        <h2>{{eventName}}</h2>
+        <h2 id="eventName">{{eventName}}</h2>
         <div class="row">
             <div class="column">
                 <div>
@@ -42,21 +42,13 @@
             </div>
         </div>
         <p>{{description}}</p>
-        {{#if attending}}
+        
         <div class="form-check">
-		  <input class="form-check-input" type="checkbox" value="" id="attending" checked>
+		  <input class="form-check-input" type="checkbox" value="" id="attending" {{#if attending}} checked {{/if}}>
 		  <label class="form-check-label" for="attending">
-		    I'm attending
+		    <p id="attendingText">I'm attending</p>
 		  </label>
 		</div>
-		{{else}}
-		<div class="form-check">
-		  <input class="form-check-input" type="checkbox" value="" id="attending">
-		  <label class="form-check-label" for="attending">
-		    I'm attending
-		  </label>
-		</div>
-		{{/if}}
 		
     </div>
  	<!-- <h4>links</h4>
@@ -71,5 +63,6 @@
 	<script src="/js/bootstrap.min.js"></script>
 	<script id="handlebars-demo" type="text/x-handlebars-template">
 </script>
+    <script src="/js/blankEvent.js"></script>
 </body>
 </html>

@@ -26,15 +26,17 @@ exports.view = function(req, res){
   	}
 	}
 
-    res.render('blankEvent', {
+  var event = {
       'image': image,
-    	'eventName': name,
-    	'eventType': eventType,
-    	'petType': petType,
-    	'breed': breed,
+      'eventName': name,
+      'eventType': eventType,
+      'petType': petType,
+      'breed': breed,
       'time': time,
       'location': location,
       'description': description,
       'attending': attending
-    });
+    }
+
+    res.render('blankEvent', event);
 };	

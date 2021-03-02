@@ -25,6 +25,7 @@ var kellyParty = require('./routes/kellyParty');
 var messages = require('./routes/messages');
 var newEvent = require('./routes/newEvent');
 var profile = require('./routes/profile');
+var editAttend = require('./routes/editAttend');
 
 var app = express();
 
@@ -60,6 +61,7 @@ app.get('/kellyParty', kellyParty.view);
 app.get('/messages', messages.view);
 app.get('/newEvent', newEvent.view);
 app.get('/profile', profile.view);
+app.get('/editAttend/:eventName', editAttend.eventInfo);
 
 
 http.createServer(app).listen(app.get('port'), function(){
