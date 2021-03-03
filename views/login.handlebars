@@ -27,22 +27,31 @@
 		</div>
 	</div>
 	 <form action="index" method="get">
-  <div class="container">
-    <img src="images/logo.png" alt="logo" class="pic-center">
-  </div>
+    <div class="container">
+        <img src="images/logo.png" alt="logo" class="pic-center">
+    </div>
+    
+    <div id="facebook">
+        <h2>Login with</h2>
+        <p class="facebookLogin"> Facebook
+            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+        </p>
+        <h4>Or</h4>
+    </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <div class="container">
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
 <!-- 
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
@@ -87,7 +96,8 @@
 	
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script id="handlebars-demo" type="text/x-handlebars-template">
-</script>
+	<script id="handlebars-demo" type="text/x-handlebars-template"></script>
+    {{> facebook}}
+	<script src="/js/facebook.js"></script>
 </body>
 </html>

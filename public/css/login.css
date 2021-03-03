@@ -179,6 +179,8 @@ img.avatar {
 /* Add padding to containers */
 .container {
   padding: 16px;
+  /* margin-left: 3%; */
+  /* margin-right: 3%; */
 }
 
 /* The "Forgot password" text */
@@ -197,3 +199,7 @@ span.psw {
     width: 100%;
   }
 } 
+
+#facebook {
+    text-align: center;
+}
