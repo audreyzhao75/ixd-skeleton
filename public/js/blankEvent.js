@@ -32,9 +32,11 @@ function changeAttending(e) {
 function updateAttending(result) {
 	if(result['attending']) {
 		console.log("You're attending! (checked)");
+        $('#attendingText').html("I'm attending!");
         $('.alert').show();
 	} else {
 		console.log("You're not attending! :( (unchecked)");
+        $('#attendingText').html("Not attending");
         $('.alert').hide();
 	}
 

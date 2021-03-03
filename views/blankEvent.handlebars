@@ -46,7 +46,13 @@
         <div class="form-check">
 		  <input class="form-check-input" type="checkbox" value="" id="attending" {{#if attending}} checked {{/if}}>
 		  <label class="form-check-label" for="attending">
-		    <p id="attendingText">I'm attending</p>
+		    <p id="attendingText">
+                {{#if attending}}
+                    I'm attending!
+                {{else}}
+                    Not attending
+                {{/if}}
+            </p>
 		  </label>
 		</div>
         <div class="alert alert-primary" role="alert">

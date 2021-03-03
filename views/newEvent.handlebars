@@ -30,20 +30,25 @@
         <p class="p8">Give event details</p>
    </div>
    <div class="containerEvent">
-        <form id="json" method="get" action="/addEvent">
+        <form id="json submitForm"method="get" action="/addEvent">
         <label for="image"><b>Image</b></label>
         <input type="file" class="form-control" placeholder="image upload" name="image">
-        <input type="text" class="form-control" placeholder="Event name" name="eventName" required>
-        <input type="text" class="form-control" placeholder="event type" name="eventType" required>
+        <input type="text" class="form-control" placeholder="Event name*" name="eventName" required>
+        <input type="text" class="form-control" placeholder="event type*" name="eventType" required>
         <input type="text" class="form-control" placeholder="pet type" name="petType">
         <input type="text" class="form-control" placeholder="breed" name="breed">
-        <input type="time" class="form-control" placeholder="time" name="time" required>
-        <input type="text" class="form-control" placeholder="location" name="location" required> 
+        <input type="time" class="form-control" placeholder="time*" name="time" required>
+        <input type="text" class="form-control" placeholder="location*" name="location" required> 
         <!-- <input type="text" class="form-control" placeholder="attending?" name="attending" required> -->
-        <input type="text" class="form-control" placeholder="description" name="description" required>
+        <input type="text" class="form-control" placeholder="description*" name="description" required>
+        
+        <div class="submitBtn">
+            <button class="btn" onclick="viewEvent()" id="getDataBtn" type="submit">Create new event</button>
+            {{!-- <button class="btn" id="getDataBtn" onclick="viewEvent()" type="submit">Create new event</button> --}}
+            <div class="alert alert-primary" role="alert"> This event is created! View your <a href="/results" class="alert-link"> events</a>.</div>
+        </div>
+        <!-- <a role="button"  href="results">Create new event</a> -->
         </form>
-        <button class="submitBtn" onclick="viewEvent()" type="submit">Create new event</button>
-        <!-- <a role="button" class="btn" id="getDataBtn" href="results">Create new event</a> -->
     </div>
 
     <!-- bottom nav -->
