@@ -26,6 +26,7 @@ var messages = require('./routes/messages');
 var newEvent = require('./routes/newEvent');
 var profile = require('./routes/profile');
 var editAttend = require('./routes/editAttend');
+var addEvent = require('./routes/addEvent');
 
 var app = express();
 
@@ -62,6 +63,7 @@ app.get('/messages', messages.view);
 app.get('/newEvent', newEvent.view);
 app.get('/profile', profile.view);
 app.get('/editAttend/:eventName', editAttend.eventInfo);
+app.get('/addEvent', addEvent.addEvent);
 
 
 http.createServer(app).listen(app.get('port'), function(){
