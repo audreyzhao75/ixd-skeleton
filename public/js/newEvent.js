@@ -29,3 +29,8 @@ getDataBtn.addEventListener('click', () => {
   const data = getData('json');
   console.log(JSON.stringify(data));
 })
+
+function viewEvent() {
+    $('.submitBtn').html('<div class="alert alert-primary" role="alert"> This event is created! View your <a href="/results" class="alert-link">saved events</a>.</div>');
+	//add in .html or .append here later?
+}
