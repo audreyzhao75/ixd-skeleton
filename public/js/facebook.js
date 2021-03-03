@@ -20,6 +20,18 @@ function statusChangeCallback(response) {
 function changeUser(response) {
     // $("p.facebookLogin").hide();
     window.location.href = "index";
-    $("#name").text(response.name);
-    $("img#photo").attr("src", response.picture.data.url);
+    localStorage.setItem("userName", response.name);
+    localStorage.setItem("userImg", response.picture.data.url);
+}
+
+//change name and photo on other pages
+var myName = localStorage.getItem("userName");
+if (myName) {
+    $("#name").text(myName);
+    $("img#photo").attr("src", myImg);
+}
+
+var myImg = localStorage.getItem("userImg");
+if (myImg) {
+    $("img#photo").attr("src", myImg);
 }
