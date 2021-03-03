@@ -18,7 +18,8 @@ function statusChangeCallback(response) {
     }
 }
 function changeUser(response) {
-    $("p.facebookLogin").hide();
+    // $("p.facebookLogin").hide();
+    window.location.href = "index";
     $("#name").text(response.name);
     $("img#photo").attr("src", response.picture.data.url);
 }

@@ -31,16 +31,13 @@
         <img src="images/logo.png" alt="logo" class="pic-center">
     </div>
     
-    <div id="facebook">
-        <h2>Login with</h2>
-        <p class="facebookLogin"> Facebook
-            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
-        </p>
-        <h4>Or</h4>
+    <div id="facebook"  class="facebookLogin">
+        <h2>Login with</h2><br>
+            <fb:login-button class="fbBtn" scope="public_profile,email" size="XLarge" onlogin="checkLoginState();"></fb:login-button>
     </div>
 
     <div class="container">
-
+        <h4 id="or">Or</h4>
         <label for="uname"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required>
 
