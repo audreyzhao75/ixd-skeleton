@@ -233,3 +233,11 @@ body {
     width: 80%;
     height: auto;
 }
+
+#profileContainer {
+    text-align: center;
+}
+
+.logoutBtn {
+    background: red;
+}
