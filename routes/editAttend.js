@@ -12,5 +12,5 @@ exports.eventInfo = function(req, res){
   		}
 	}
 
-  res.json(event);
+    res.json(event);
 };	

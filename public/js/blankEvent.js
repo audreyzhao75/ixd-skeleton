@@ -17,9 +17,6 @@ function initializePage() {
  * Make an AJAX call to retrieve changed event attendance
  */
 function changeAttending(e) {
-	// Prevent following the link
-	//e.preventDefault();
-
 	//get eventName
 	var name = document.getElementById('eventName').innerHTML;
 	
@@ -39,6 +36,4 @@ function updateAttending(result) {
         $('#attendingText').html("Not attending");
         $('.alert').hide();
 	}
-
-	//add in .html or .append here later?
 }
