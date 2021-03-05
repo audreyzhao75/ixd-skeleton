@@ -81,6 +81,7 @@ body {
   font-size:30px;
   color:black;
   text-align: center;
+  font-weight: bold;
 }
 
 .p5 {
@@ -97,21 +98,21 @@ body {
 }
 
 .p7 {
-  font-family: "Lucida Console", "Courier New", cursive;
+  font-family: "Lucida Console", "Courier New", monospace;
   color:black;
   text-align: left;
   font-size:15px;
 }
 
 .p8 {
-  font-family: "Lucida Console", "Courier New", cursive;
+  font-family: "Lucida Console", "Courier New", monospace;
   color:black;
   text-align: center;
   font-size:15px;
 }
 
 .p9 {
-  font-family: "Lucida Console", "Courier New", cursive;
+  font-family: "Lucida Console", "Courier New", monospace;
   color:black;
   text-align: center;
   font-size:15px;

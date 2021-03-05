@@ -1,9 +1,8 @@
 var events = require("../views/events.json");
 
-exports.addEvent = function(request, response) {    
-	// Your code goes here
+exports.addEvent = function(request, response) {   
 	var newEvent = {
-	"image": request.query.image,
+	    "image": request.query.image,
         "eventName": request.query.eventName,
         "eventType": request.query.eventType,
         "petType": request.query.petType,

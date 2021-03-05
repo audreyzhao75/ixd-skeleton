@@ -104,10 +104,11 @@ body {
 }
 
 .p8 {
-  font-family: "Lucida Console", "Courier New", cursive;
+  font-family: "Lucida Console", "Courier New", monospace;
   color:black;
   text-align: center;
-  font-size:15px;
+  font-size:20px;
+  font-weight: bold;
 }
 
 .p9 {
