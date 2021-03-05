@@ -1,0 +1,39 @@
+.topBar {
+    background-color: #8dbbf2;
+    align-items: center;
+    padding: 10px;
+}
+
+.topBar img, .topBar h4 {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.mynavbar {
+    text-align: center;
+    overflow: hidden;
+    background-color: #8dbbf2;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+.mynavbar a {
+    color: #fefdff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+.btn{
+    background-color:#d8dde9;
+    color: black;
+}
+
+.selectpicker{
+    background-color: #fdeecc;
+}
+
+#getDataBtn {
+	background-color: #d9aa6b;
+}

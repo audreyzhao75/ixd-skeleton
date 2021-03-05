@@ -7,14 +7,14 @@ body {
 }
 
 .topBar {
-    background-color: rgb(228, 228, 228);
+    background-color: #8dbbf2;
     align-items: center;
     padding: 10px;
 }
 
 .topBar img, .topBar h4 {
     display: block;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
     text-decoration: none;
 }
