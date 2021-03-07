@@ -12,10 +12,10 @@ function initializePage() {
 }
 
 $("#petType").change(function() {
-	if ($(this).val() == "dogs") {
+	if ($(this).val() == "Dog") {
 		$('#dogBreedDiv').show();
 		$('#catBreedDiv').hide();
-    } else if ($(this).val() == "cats") {
+    } else if ($(this).val() == "Cat") {
     	$('#catBreedDiv').show();
     	$('#dogBreedDiv').hide();
     } else {

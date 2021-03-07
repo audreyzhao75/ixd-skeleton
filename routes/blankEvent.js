@@ -2,14 +2,14 @@ var events = require('../views/events.json');
 
 exports.view = function(req, res){
 	var name = req.params.eventName;
-    var image;
-    var eventType;
-    var petType;
-    var breed;
-    var time;
-    var location;
-    var description;
-    var attending;
+  var image;
+  var eventType;
+  var petType;
+  var breed;
+  var time;
+  var location;
+  var description;
+  var attending;
 
 
 	for(var i = 0; i < events.events.length; i++)
