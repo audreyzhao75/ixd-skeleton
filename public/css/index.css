@@ -72,55 +72,55 @@ body {
 .p3 {
   font-family: "Lucida Console", "Courier New", monospace;
   /*font-size:16px; */
-  color:black;
+  color:#434343;
   text-align: center;
 }
 
 .p4 {
   font-family: "Lucida Console", "Courier New", monospace;
   font-size:30px;
-  color:black;
+  color:#434343;
   text-align: center;
   font-weight: bold;
 }
 
 .p5 {
   font-family: "Copperplate", "Papyrus", fantasy;
-  color:black;
+  color:#434343;
   text-align: center;
 }
 
 .p6 {
   font-family: "Lucida Console", "Courier New", monospace;
   /*font-size:20px; */
-  color:black;
+  color:#434343;
   text-align: center;
 }
 
 .p7 {
   font-family: "Lucida Console", "Courier New", monospace;
-  color:black;
+  color:#434343;
   text-align: left;
   font-size:15px;
 }
 
 .p8 {
   font-family: "Lucida Console", "Courier New", monospace;
-  color:black;
+  color:#434343;
   text-align: center;
   font-size:15px;
 }
 
 .p9 {
   font-family: "Lucida Console", "Courier New", monospace;
-  color:black;
+  color:#434343;
   text-align: center;
   font-size:15px;
 }
 
 .p10 {
   font-family: "Brush Script M7", "Lucida Handwriting", cursive;
-  color:black;
+  color:#434343;
   text-align: right;
   font-size:15px;
 }
@@ -135,15 +135,17 @@ body {
 }
 
 .contentBorder {
-    border-radius: 25px;
-    border: 2px solid #facedf;
-    background-color: rgb(255, 239, 243);
+    border-radius: 5px;
+    border: 2px solid #fbfbfb;
+    background-color: #fbfbfb;
     padding: 10px;
     height: auto;
 }
 
 #searchEventBtn {
-    margin-top: 2%;
+    margin-top: 5%;
+    background-color: rgb(252,226,199);
+    color: #434343;
 }
 
 #avatar {
@@ -161,13 +163,15 @@ body {
 
 .btn, .selectpicker{
     background-color:#d8dde9;
-    color: black;
+    color: #434343;
 }
 
-.go-btn, #searchEventBtn {
-    background-color: #d9aa6b;
-    border-color: #d9aa6b;
+.go-btn {
+    background-color: #e8b8af;
+    border-color: #e8b8af;
+    color: #434343;
 }
+
 /* card stuff */
 
 .resultsCards {
@@ -177,9 +181,10 @@ body {
 }
 
 .card {
-    margin-top: 5px;
-    background-color: rgb(255, 239, 243);
-    border-color: #c68f94;
+    margin-top: 20px;
+    background-color: rgb(247, 242, 240);
+    border-color: rgb(247, 242,240);
+    color: #434343;
 }
 
 .card-thumbnail {
@@ -247,5 +252,6 @@ body {
 }
 
 .logoutBtn {
-    background: #d9aa6b;
+    background: rgb(252,226,199);
+    color: #434343;
 }

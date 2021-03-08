@@ -32,19 +32,19 @@
    </div>
    <div class="containerEvent">
         <form id="json submitForm"method="get" action="/addEvent">
-        <label for="image"><b>Image</b></label>
-        <input type="file" class="form-control" placeholder="image upload" name="image">
-        <input type="text" class="form-control" placeholder="Event name*" name="eventName" required>
-        <input type="text" class="form-control" placeholder="event type*" name="eventType" required>
-        <input type="text" class="form-control" placeholder="pet type*" name="petType" required>
-        <input type="text" class="form-control" placeholder="breed*" name="breed" required>
-        <input type="time" class="form-control" placeholder="time*" name="time" required>
-        <input type="text" class="form-control" placeholder="location*" name="location" required> 
-        <input type="text" class="form-control" placeholder="description*" name="description" required>
+        	<label for="image" hidden><b>Image</b></label>
+        		<input type="file" class="form-control" placeholder="image upload" name="image">
+	        <input type="text" class="form-control" placeholder="Event name*" name="eventName" required>
+	        <input type="text" class="form-control" placeholder="Event type*" name="eventType" required>
+        	<input type="text" class="form-control" placeholder="Pet type*" name="petType" required>
+        	<input type="text" class="form-control" placeholder="Breed*" name="breed" required>
+        	<input type="time" class="form-control" placeholder="Time*" name="time" required>
+        	<input type="text" class="form-control" placeholder="Location*" name="location" required> 
+        	<input type="text" class="form-control" placeholder="Description*" name="description" required>
         
-        <div class="submitBtn">
-            <button class="btn" onclick="viewEvent()" id="getDataBtn" type="submit">Create new event</button>
-        </div>
+        	<div class="submitBtn">
+            	<button class="btn" onclick="viewEvent()" id="getDataBtn" type="submit">Create new event</button>
+        	</div>
         </form>
     </div>
 
