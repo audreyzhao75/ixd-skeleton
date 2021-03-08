@@ -1,11 +1,11 @@
 var events = require('../views/events.json');
 
 exports.eventInfo = function(req, res){
-	var name = req.params.eventName;
+  var id = req.params.id;
 	var event;
 
 	for(var i = 0; i < events.events.length; i++) {
-    	if(events.events[i].eventName == name) {
+    	if(events.events[i].id == id) {
       	//change attending
       	events.events[i].attending = !events.events[i].attending;
       	event = events.events[i];

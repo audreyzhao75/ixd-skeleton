@@ -57,7 +57,34 @@
         <div class="alert alert-primary" role="alert">
             This event is saved! View your <a href="../index" class="alert-link">saved events</a>.
         </div>
-		
+
+		{{#if yours}}
+        <button type="button" class="btn go-btn" data-toggle="modal" data-target="#deleteWarning">Delete Event</button>
+        
+        <!-- delete confirmation modal -->
+        <div class="modal fade" id="deleteWarning" tabindex="-1" role="dialog" aria-labelledby="deleteWarning" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteWarningLabel">Warning!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        You are about to delete this event. This action cannot be undone. Delete anyway?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <form id="delete" role="form" method="get" action="/deleteEvent">
+                            <input type="hidden" name="id" value={{id}}></input>
+                            <input type="submit" class="btn btn-primary" value="Confirm"></input>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/if}}
     </div>
     <div class="mynavbar">
 		<!--home-->

@@ -21,6 +21,7 @@ var newEvent = require('./routes/newEvent');
 var profile = require('./routes/profile');
 var editAttend = require('./routes/editAttend');
 var addEvent = require('./routes/addEvent');
+var deleteEvent = require('./routes/deleteEvent');
 
 var app = express();
 
@@ -50,14 +51,14 @@ app.get('/index', index.view);
 // app.get('/users', user.list);
 app.get('/search', search.view);
 app.get('/results', results.view);
-app.get('/blankEvent/:eventName', blankEvent.view);
+app.get('/blankEvent/:id', blankEvent.view);
 app.get('/help', help.view);
 app.get('/messages', messages.view);
 app.get('/newEvent', newEvent.view);
 app.get('/profile', profile.view);
-app.get('/editAttend/:eventName', editAttend.eventInfo);
+app.get('/editAttend/:id', editAttend.eventInfo);
 app.get('/addEvent', addEvent.addEvent);
-
+app.get('/deleteEvent', deleteEvent.deleteEvent);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

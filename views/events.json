@@ -1,6 +1,7 @@
 {
     "events": [
         {
+            "id": 1,
             "image": "copper.jpeg",
             "eventName": "Sally's Cute Doggos!!",
             "eventType": "Adoption",
@@ -10,9 +11,11 @@
             "sortBy": "nextWeek",
             "location": "2021 Golden Drive",
             "attending": false,
+            "yours": false,
             "description": "Four lovely golden retriever puppies up for adoption! They're 5 months old and looking for a loving home! 3 males and 2 females and potty-trained. Names are: Sam, Spike, Sunny, Oscar, Peach"
         },
         {
+            "id": 2,
             "image": "popcorn.jpg",
             "eventName": "Kelly's Puppy Party",
             "eventType": "Adoption",
@@ -22,9 +25,11 @@
             "sortBy": "nextWeek",
             "location": "1234 Puppy Lane",
             "attending": false,
+            "yours": false,
             "description": "We have 3 five-month old puppies up for adoption! 2 females and 1 male. They're all very energetic and looking for a loving and active home!"
         },
         {
+            "id": 3,
             "image": "copperfriends.jpeg",
             "eventName": "Petco Adoption Event",
             "eventType": "Adoption",
@@ -34,9 +39,11 @@
             "sortBy": "nextWeek",
             "location": "Petco Store",
             "attending": false,
+            "yours": false,
             "description": "10 dogs of various breeds (2 Golden retrievers, 3 Hound, 4 Terrier, 1 Pug). "
         },
         {
+            "id": 4,
             "image": "buffInu.png",
             "eventName": "Chad's Bring a Pup Home",
             "eventType": "Adoption",
@@ -46,9 +53,11 @@
             "sortBy": "nextWeek nextMonth",
             "location": "7890 Doge Court",
             "attending": false,
+            "yours": false,
             "description": "2 males - one 5 year old, one 3 years old. Both very playful."
         },
         {
+            "id": 5,
             "image": "IMG_9648.JPG",
             "eventName": "Ben's Adoption Party",
             "eventType": "Adoption",
@@ -58,6 +67,7 @@
             "sortBy": "nextWeek nextMonth",
             "location": "8765 Majestic Way",
             "attending": false,
+            "yours": false,
             "description": "Her name is Emma! Mostly chill but can be very playful. She's about 10 years old and loves to hang aroung people! She needs a home that will giver lots of love and affection! Contact me for more information."
         }
     ]

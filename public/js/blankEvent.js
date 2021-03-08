@@ -17,13 +17,16 @@ function initializePage() {
  * Make an AJAX call to retrieve changed event attendance
  */
 function changeAttending(e) {
+	//get id
+	var path = window.location.pathname.split('/');
+	var id = path[2];
 	//get eventName
 	var name = document.getElementById('eventName').innerHTML;
 	
 	// call AJAX endpoint
-	$.get("/editAttend/" + name, updateAttending);
+	$.get("/editAttend/" + id, updateAttending);
 
-	console.log("User clicked on " + name);
+	console.log("User clicked on " + name + " id: " + id);
 }
 
 function updateAttending(result) {

@@ -153,7 +153,7 @@ body {
   margin-right: 3%;
 }
 
-/* Resutls and Search pages */
+/* Results and Search pages */
 .sortFilter {
     margin-top: 60px;
     text-align:center;
@@ -161,10 +161,6 @@ body {
     margin-right: 5%;
 }
 
-.btn, .selectpicker{
-    background-color:#d8dde9;
-    color: #434343;
-}
 
 .go-btn {
     background-color: #e8b8af;
@@ -254,4 +250,9 @@ body {
 .logoutBtn {
     background: rgb(252,226,199);
     color: #434343;
+}
+
+#getDataBtn {
+  background-color: rgb(252,226,199);
+  color: #434343;
 }
