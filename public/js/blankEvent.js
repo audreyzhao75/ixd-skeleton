@@ -10,7 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$('.form-check-input').click(changeAttending);
-    $('.alert').hide();
+    $('div.alert').hide();
 }
 
 /*

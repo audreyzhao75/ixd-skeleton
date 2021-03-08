@@ -136,7 +136,7 @@ body {
 
 .contentBorder {
     border-radius: 5px;
-    border: 2px solid #fbfbfb;
+    border: 2px solid #cee7f1;
     background-color: #fbfbfb;
     padding: 10px;
     height: auto;
@@ -255,4 +255,13 @@ body {
 #getDataBtn {
   background-color: rgb(252,226,199);
   color: #434343;
+}
+
+.hidden {
+    display: none;
+}
+
+#profilepets {
+    margin-left: 2%;
+    margin-right: 2%;
 }
