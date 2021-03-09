@@ -28,37 +28,20 @@
     </div>
     <!-- message history -->
 
-     	<div class="msgcontainer" id="topMessage">
-  		<img src="images/Angela.jpg" alt="Avatar">
-  		<p>Hello. Are you coming to Kelly's Puppy Party?</p>
-  		<span class="time-right">11:00</span>
-		</div>
+     	<div class="col-sm-3 col-sm-offset-4 frame">
+            <ul></ul>
+            <div>
+                <div class="msj-rta macro">                        
+                    <div class="text text-r" style="background:whitesmoke !important">
+                        <input class="mytext" placeholder="Type a message"/>
+                    </div> 
 
-		<div class="msgcontainer darker">
-  		<img src="images/gigachad.jpg" alt="Avatar" class="right" id="photo">
-  		<p>Hey! Of course, see you there next week?</p>
-  		<span class="time-left">11:01</span>
-		</div>
-
-		<div class="msgcontainer">
-  		<img src="images/Angela.jpg" alt="Avatar">
-  		<p>Sweet! I am too. I can't wait for fido to meet new friends</p>
-  		<span class="time-right">11:02</span>
-		</div>
-
-		<div class="msgcontainer darker">
-  		<img src="images/gigachad.jpg" alt="Avatar" class="right" id="photo">
-  		<p>I'm so glad I got this app.</p>
-  		<span class="time-left">11:05</span>
-		</div>
-
-		<form>
-            <!--type a message-->
-            <div class="form-group">
-                <label class="sr-only" for="typeMessage">typeMessage</label>
-                    <input type="text" class="form-control" placeholder="type a message">
+                </div>
+                <div style="padding:10px;">
+                    <span class="glyphicon glyphicon-share-alt"></span>
+                </div>                
             </div>
-          </form> 
+        </div>      
 
     <!-- bottom nav -->
 	<div class="mynavbar">
@@ -96,7 +79,7 @@
 
     <script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/facebook.js"></script>
+	<script src="js/messages.js"></script>
 	<script id="handlebars-demo" type="text/x-handlebars-template">
 </script>
 </body>
