@@ -87,16 +87,16 @@
         {
             "id": 7,
             "image": "cats/maineCoon.jpg",
-            "eventName": "Meetup",
-            "eventType": "",
+            "eventName": "Maine Coon Meetup",
+            "eventType": "Meetup",
             "petType": "Cat",
-            "breed": "",
-            "time": "",
+            "breed": "Maine Coon",
+            "time": "Sunday 2:00pm",
             "sortBy": "",
-            "location": "",
+            "location": "1234 Main Street",
             "attending": false,
             "yours": false,
-            "description": ""
+            "description": "My little kitty wants some friends!"
         },
         {
             "id": 8,
