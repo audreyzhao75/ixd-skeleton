@@ -20,7 +20,7 @@ exports.view = function(req, res){
 					if(req.query.eventName == "" || events.events[i].eventName == req.query.eventName) {
 						resultEvents.events.push(events.events[i]);
 					}
-				} else if(events.events[i].breed == req.query.dogBreed) {
+				} else if(events.events[i].breed == req.query.catBreed) {
 					resultEvents.events.push(events.events[i]);
 				}
 			}
