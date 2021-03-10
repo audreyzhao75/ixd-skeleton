@@ -181,6 +181,34 @@
             "attending": false,
             "yours": false,
             "description": "My kittens need some cat friends! They're all very friendly."
+        },
+        {
+            "id": 14,
+            "image": "cats/peachesncream.jpg",
+            "eventName": "Bonded pair of cats for adoption!",
+            "eventType": "Adoption",
+            "petType": "Cat",
+            "breed": "Calico",
+            "time": "3/22/2021 12:00pm",
+            "sortBy": "",
+            "location": "958 Tortoise Grove",
+            "attending": false,
+            "yours": false,
+            "description": "A bonded pair; must  adopt together! Peaches and Cream are calico sisters about 8 months old! :) Currently living with a loving foster family."
+        },
+        {
+            "id": 15,
+            "image": "yesGOOD.jpeg",
+            "eventName": "Bakin' Buddies Fundraiser!",
+            "eventType": "Fundraising",
+            "petType": "Dog",
+            "breed": "Mixed",
+            "time": "3/22/2021 12:00pm",
+            "sortBy": "",
+            "location": "361 S Raymond Ave",
+            "attending": false,
+            "yours": false,
+            "description": "A fundraiser for our local humane society! Come and spend a relaxing day baking with your best bud! All food and ingredients are pet-friendly."
         }
     ]
 }

@@ -2,19 +2,31 @@ var events = require("../views/events.json");
 
 exports.addEvent = function(request, response) { 
         var breed;
+        var image;
 
         if(request.query.petType == 'Dog') {
-                breed = request.query.dogBreed;
+                if(request.query.dogBreed == '') {
+                        breed = "no breed specified";
+                } else {
+                        breed = request.query.dogBreed;
+                }
+                image = 'blep.jpeg';
         } else if(request.query.petType == 'Cat') {
-                breed = request.query.catBreed;
+                if(request.query.catBreed == '') {
+                        breed = "no breed specified";
+                } else {
+                        breed = request.query.catBreed;
+                }
+                image = 'cats/uwu.jpg';
         } else {
                 //if not cat or dog
-                breed = "no breed";
+                breed = "no breed specified";
+                image = "sixth college represent.jpg"
         }
 
 	var newEvent = {
                 "id": events.events.length + 1,
-                "image": request.query.image,
+                "image": image,
                 "eventName": request.query.eventName,
                 "eventType": request.query.eventType,
                 "petType": request.query.petType,

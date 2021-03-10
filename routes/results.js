@@ -23,6 +23,9 @@ exports.view = function(req, res){
 				} else if(events.events[i].breed == req.query.catBreed) {
 					resultEvents.events.push(events.events[i]);
 				}
+			} else if(events.events[i].petType == req.query.petType) {
+				//animal other than cat or dog
+				resultEvents.events.push(events.events[i]);
 			}
 		}
 	}
