@@ -148,10 +148,10 @@ body {
     margin-right: 5%;
 }
 
-.btn, .selectpicker{
+/*.btn {
     background-color:rgb(187, 187, 187);
     color: white;
-}
+}*/
 
 /* card stuff */
 
@@ -222,12 +222,12 @@ body {
     height: auto;
 }
 
-.containerEvent{
+/*.containerEvent{
     margin-left: 7%;
     margin-right: 7%;
     margin-bottom: 80px;
     text-align: center;
-}
+}*/
 
 .form-control {
     margin-bottom: 2%;

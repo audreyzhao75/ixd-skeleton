@@ -1,14 +1,18 @@
 <html>
 <head>
 	<title>page 2</title>
-	<!-- Required meta tags -->
+<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--bootstrap-select-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link href="css/index.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/newEvent.css">
     <link href="css/index.css" rel="stylesheet">
 </head>
@@ -29,18 +33,74 @@
 	</div>
    <div class="container">
         <p class="p8">Give event details</p>
-   </div>
-   <div class="containerEvent">
-        <form id="json submitForm"method="get" action="/addEvent">
+        <form id="createEvent" method="get" action="/addEvent">
+        	<!--image-->
         	<label for="image" hidden><b>Image</b></label>
         		<input type="file" class="form-control" placeholder="image upload" name="image">
-	        <input type="text" class="form-control" placeholder="Event name*" name="eventName" required>
-	        <input type="text" class="form-control" placeholder="Event type*" name="eventType" required>
-        	<input type="text" class="form-control" placeholder="Pet type*" name="petType" required>
-        	<input type="text" class="form-control" placeholder="Breed*" name="breed" required>
-        	<input type="time" class="form-control" placeholder="Time*" name="time" required>
-        	<input type="text" class="form-control" placeholder="Location*" name="location" required> 
-        	<input type="text" class="form-control" placeholder="Description*" name="description" required>
+
+        	<!--event name-->
+        	<label for="eventName">Event Name*</label>
+		        <input type="text" class="form-control" placeholder="Event Name" name="eventName" required>
+
+		    <!--event type-->
+	        <div class="form-group row">
+                <label for="event" class="col-sm-2 col-form-label">Event*</label>
+                <div class="col-sm-10">
+                    <select name="eventType" class="selectpicker dropdown-menu-right form-control" data-actions-box="true" id="eventType" required>
+                        <option value="" hidden>None</option>
+                        <option value="Adoption">Adoption</option> 
+                        <option value="Meetup">Meetup</option> 
+                        <option value="Class">Class</option>
+                        <option value="Fundraising">Fundraising</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+        	<!--pet type-->
+            <div class="form-group row">
+                <label for="petType" class="col-sm-2 col-form-label">Pet Type*</label>
+                <div class="col-sm-10">
+                    <select name="petType" class="selectpicker dropdown-menu-right form-control" id="petType" required>
+                        <option value="" hidden>None</option>
+                        <option value="Dog">Dog</option> 
+                        <option value="Cat">Cat</option> 
+                        <option value="Critter">Critter</option>
+                        <option value="Reptile">Reptile</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--dog breeds-->
+            <div class="form-group row" id="dogBreedDiv">
+                <label for="breed" class="col-sm-2 col-form-label">Breed</label>
+                <div class="col-sm-10">
+                    <select name="dogBreed" class="selectpicker dropdown-menu-right form-control" data-live-search="true" id="dogBreed" title="Pick a breed" data-size="5">
+                        {{#each dogs}}
+                        <option value="{{this}}">{{this}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+            </div>
+
+            <!--cat breeds-->
+            <div class="form-group row" id="catBreedDiv">
+                <label for="catBreed" class="col-sm-2 col-form-label">Breed</label>
+                <div class="col-sm-10">
+                    <select name="catBreed" class="selectpicker dropdown-menu-right form-control" data-live-search="true" id="catBreed" title="Pick a breed" data-size="5">
+                        {{#each cats}}
+                        <option value="{{this}}">{{this}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+            </div>
+            <label for="time">Time*</label>
+	        	<input type="time" class="form-control" placeholder="Time" name="time" required>
+            <label for="location">Location*</label>
+        		<input type="text" class="form-control" placeholder="Location" name="location" required> 
+        	<label for="description">Description*</label>
+        		<input type="text" class="form-control" placeholder="Description" name="description" required>
         
         	<div class="submitBtn">
             	<button class="btn" onclick="viewEvent()" id="getDataBtn" type="submit">Create new event</button>
@@ -82,10 +142,15 @@
 		</a>
 	</div>
 
-<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/newEvent.js"></script>
-	<script id="handlebars-demo" type="text/x-handlebars-template">
-</script>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!--bootstrap-select-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+   	<script src="js/newEvent.js"></script>
 </body>
 </html>
