@@ -35,6 +35,11 @@
             </div>
             <div class="column">
                 <p>{{eventType}} Event</p>
+                {{#if yours}}
+                    <p>Hosted by: you</p>
+                {{else}}
+                    <p>Hosted by: {{createdBy}}</p>
+                {{/if}}
                 <p>{{petType}}: {{breed}}</p>
                 <p>{{time}}</p>
                 <p>{{location}}</p>

@@ -10,6 +10,7 @@ exports.view = function(req, res){
   var time;
   var location;
   var description;
+  var createdBy;
   var attending;
   var yours;
 
@@ -25,6 +26,7 @@ console.log(id);
             time = events.events[i].time;
             location = events.events[i].location;
             description = events.events[i].description;
+            createdBy = events.events[i].createdBy;
             attending = events.events[i].attending;
             yours = events.events[i].yours;
         }
@@ -40,6 +42,7 @@ console.log(id);
       'time': time,
       'location': location,
       'description': description,
+      'createdBy': createdBy,
       'attending': attending,
       'yours': yours
     }

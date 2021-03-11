@@ -11,6 +11,7 @@
             "sortBy": "nextWeek",
             "location": "2021 Golden Drive",
             "attending": false,
+            "createdBy": "Sally S",
             "yours": false,
             "description": "Four lovely golden retriever puppies up for adoption! They're 5 months old and looking for a loving home! 3 males and 2 females and potty-trained. Names are: Sam, Spike, Sunny, Oscar, Peach"
         },
@@ -25,6 +26,7 @@
             "sortBy": "nextWeek",
             "location": "1234 Puppy Lane",
             "attending": false,
+            "createdBy": "Kelly M",
             "yours": false,
             "description": "We have 3 five-month old puppies up for adoption! 2 females and 1 male. They're all very energetic and looking for a loving and active home!"
         },
@@ -39,6 +41,7 @@
             "sortBy": "nextWeek",
             "location": "Petco Store",
             "attending": false,
+            "createdBy": "Petco",
             "yours": false,
             "description": "10 dogs of various breeds (2 Golden retrievers, 3 Hound, 4 Terrier, 1 Pug). "
         },
@@ -53,6 +56,7 @@
             "sortBy": "nextWeek nextMonth",
             "location": "7890 Doge Court",
             "attending": false,
+            "createdBy": "Chad B",
             "yours": false,
             "description": "2 males - one 5 year old, one 3 years old. Both very playful."
         },
@@ -67,6 +71,7 @@
             "sortBy": "nextWeek nextMonth",
             "location": "8765 Majestic Way",
             "attending": false,
+            "createdBy": "Ben P",
             "yours": false,
             "description": "Her name is Emma! Mostly chill but can be very playful. She's about 10 years old and loves to hang aroung people! She needs a home that will giver lots of love and affection! Contact me for more information."
         },
@@ -81,6 +86,7 @@
             "sortBy": "",
             "location": "4321 Cat Park",
             "attending": false,
+            "createdBy": "Sam J",
             "yours": false,
             "description": "5 year old female Bengal cat that is looking for a new home!"
         },
@@ -95,6 +101,7 @@
             "sortBy": "",
             "location": "1234 Main Street",
             "attending": false,
+            "createdBy": "Linda L",
             "yours": false,
             "description": "My little kitty wants some friends!"
         },
@@ -109,6 +116,7 @@
             "sortBy": "",
             "location": "University Auditorium",
             "attending": false,
+            "createdBy": "Pam K",
             "yours": false,
             "description": "Come learn the basics of raising kittens! Beginner or advanced, there's something everyone can learn from this class!"
         },
@@ -123,6 +131,7 @@
             "sortBy": "",
             "location": "0987 Crazy Cat Place",
             "attending": false,
+            "createdBy": "Audrey Z",
             "yours": false,
             "description": "Alex is very friendly, and I want him to meet other social cats! "
         },
@@ -137,6 +146,7 @@
             "sortBy": "",
             "location": "7654 Chill Palace",
             "attending": false,
+            "createdBy": "Allison A",
             "yours": false,
             "description": "4 kittens! 2 male and 2 females of mixed breed."
         },
@@ -151,6 +161,7 @@
             "sortBy": "",
             "location": "Cat Park",
             "attending": false,
+            "createdBy": "Rachel L",
             "yours": false,
             "description": "We currently have 7 Ragdoll kittens up for adoption. 4 females amd 3 males."
         },
@@ -165,6 +176,7 @@
             "sortBy": "",
             "location": "5/1/2021 11:00am",
             "attending": false,
+            "createdBy": "Jamie F",
             "yours": false,
             "description": "We want to share our experience on caring for Shorthairs!"
         },
@@ -179,6 +191,7 @@
             "sortBy": "",
             "location": "5555 Cat Court",
             "attending": false,
+            "createdBy": "Ken B",
             "yours": false,
             "description": "My kittens need some cat friends! They're all very friendly."
         },
@@ -193,6 +206,7 @@
             "sortBy": "",
             "location": "958 Tortoise Grove",
             "attending": false,
+            "createdBy": "Elisa Z",
             "yours": false,
             "description": "A bonded pair; must  adopt together! Peaches and Cream are calico sisters about 8 months old! :) Currently living with a loving foster family."
         },
@@ -207,6 +221,7 @@
             "sortBy": "",
             "location": "361 S Raymond Ave",
             "attending": false,
+            "createdBy": "Payam S",
             "yours": false,
             "description": "A fundraiser for our local humane society! Come and spend a relaxing day baking with your best bud! All food and ingredients are pet-friendly."
         }
