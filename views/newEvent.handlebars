@@ -47,7 +47,7 @@
 		    <!--event type-->
 	        <div class="form-group row">
                 <label for="event" class="col-sm-2 col-form-label">Event*</label>
-                <div class="col-sm-10 formHeight">
+                <div class="col-sm-10">
                     <select name="eventType" class="selectpicker dropdown-menu-right form-control" data-actions-box="true" id="eventType" required>
                         <option value="" hidden>None</option>
                         <option value="Adoption">Adoption</option> 
@@ -62,7 +62,7 @@
         	<!--pet type-->
             <div class="form-group row">
                 <label for="petType" class="col-sm-2 col-form-label">Pet Type*</label>
-                <div class="col-sm-10 formHeight">
+                <div class="col-sm-10">
                     <select name="petType" class="selectpicker dropdown-menu-right form-control" id="petType" required>
                         <option value="" hidden>None</option>
                         <option value="Dog">Dog</option> 
@@ -78,7 +78,7 @@
             <div class="form-group row" id="dogBreedDiv">
                 <label for="breed" class="col-sm-2 col-form-label">Breed</label>
                 <div class="col-sm-10">
-                    <select name="dogBreed" class="selectpicker dropdown-menu-right form-control" data-live-search="true" id="dogBreed" title="Pick a breed" data-size="5">
+                    <select name="dogBreed" class="selectpicker dropdown-menu-right form-control formHeight" data-live-search="true" id="dogBreed" title="Pick a breed" data-size="5">
                         {{#each dogs}}
                         <option value="{{this}}">{{this}}</option>
                         {{/each}}
@@ -87,7 +87,7 @@
             </div>
 
             <!--cat breeds-->
-            <div class="form-group row" id="catBreedDiv">
+            <div class="form-group row dropdownEvent" id="catBreedDiv">
                 <label for="catBreed" class="col-sm-2 col-form-label">Breed</label>
                 <div class="col-sm-10">
                     <select name="catBreed" class="selectpicker dropdown-menu-right form-control" data-live-search="true" id="catBreed" title="Pick a breed" data-size="5">

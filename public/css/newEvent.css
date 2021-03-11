@@ -233,6 +233,8 @@ body {
     margin-bottom: 2%;
 }
 
-.formHeight{
-    height: 100%;
+.btn {
+    padding: 3%;
+    width: 100%;
+    /* padding-top: 0px; */
 }
