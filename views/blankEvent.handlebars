@@ -15,7 +15,7 @@
     <div class="topBar fixed-top" >
         <div class="row">
             <div class="col">
-                <a href="javascript:history.back()"><img src="/images/backButton.png" class="topIcons"></a>
+                <a href="javascript:window.location.replace(document.referrer)"><img src="/images/backButton.png" class="topIcons"></a>
             </div>
             <div class="col-8">
                 <h4>Event</h4>
@@ -41,24 +41,26 @@
             </div>
         </div>
         <p>{{description}}</p>
-        
-        <div class="form-check">
-		  <input class="form-check-input" type="checkbox" value="" id="attending" {{#if attending}} checked {{/if}}>
-		  <label class="form-check-label" for="attending">
-		    <p id="attendingText">
-                {{#if attending}}
-                    I'm attending!
-                {{else}}
-                    Not attending
-                {{/if}}
-            </p>
-		  </label>
-		</div>
+
+        {{#unless yours}}
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="attending" {{#if attending}} checked {{/if}}>
+            <label class="form-check-label" for="attending">
+                <p id="attendingText">
+                    {{#if attending}}
+                        I'm attending!
+                    {{else}}
+                        Not attending
+                    {{/if}}
+                </p>
+            </label>
+            </div>
+        {{/unless}}
 
         <div class="alert alert-primary" role="alert">
             This event is saved! View your <a href="../index" class="alert-link">saved events</a>.
         </div>
-
+        
 		{{#if yours}}
         <button type="button" class="btn go-btn" data-toggle="modal" data-target="#deleteWarning">Delete Event</button>
         

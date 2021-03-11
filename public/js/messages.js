@@ -1,5 +1,11 @@
 var me = {};
-me.avatar = "images/gigachad.jpg";
+
+if(myImg){
+    me.avatar= myImg;
+}
+else {
+    me.avatar = "images/gigachad.jpg";
+}
 
 var you = {};
 you.avatar = "images/angela.jpg";
@@ -26,7 +32,7 @@ function insertChat(who, text, time){
     if (who == "me"){
         control = '<li style="width:100%">' +
                         '<div class="msj macro">' +
-                        '<div class="avatar"><img class="img-circle" style="width:100%;" src="'+ me.avatar +'" /></div>' +
+                        '<div class="avatar"><img id="photo" class="img-circle" style="width:100%;" src="'+ me.avatar +'" /></div>' +
                             '<div class="text text-l">' +
                                 '<p>'+ text +'</p>' +
                                 '<p><small>'+date+'</small></p>' +
