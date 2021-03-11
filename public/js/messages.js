@@ -8,7 +8,7 @@ else {
 }
 
 var you = {};
-you.avatar = "images/angela.jpg";
+you.avatar = "images/Angela.jpg";
 
 function formatAMPM(date) {
     var hours = date.getHours();
